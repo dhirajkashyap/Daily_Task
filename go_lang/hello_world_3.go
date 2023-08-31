@@ -9,8 +9,8 @@ const (
 )
 
 const (
-	_ = iota
-	c4
+	_  = iota
+	c4 = (1 << (iota * 10))
 	c5
 	c6
 	c7
@@ -25,4 +25,5 @@ func main() {
 	fmt.Printf("Name %s is %d years old i %d\n", name, age, i)
 	fmt.Println(c1, c2, c3)
 	fmt.Println(c4, c5, c6, c7)
+	fmt.Printf("%b %b %b %b\n", c4, c5, c6, c7)
 }
