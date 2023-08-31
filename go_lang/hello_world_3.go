@@ -9,7 +9,8 @@ const (
 )
 
 const (
-	c4 = iota
+	_ = iota
+	c4
 	c5
 	c6
 	c7
