@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/dhirajkashyap/Puppy"
+
+	puppy "github.com/dhirajkashyap/Puppy"
 )
 
 func main() {
