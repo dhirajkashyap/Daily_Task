@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 
 	puppy "github.com/dhirajkashyap/Puppy"
 )
@@ -17,5 +18,9 @@ func main() {
 	s3 := puppy.Barkz()
 	fmt.Printf("Hello says Puppy, I got a new Barkz %s\n", s3)
 	s4 := puppy.BigBark()
-	fmt.Printf("Hello says Puppy - When am big, I gonna say %s\n", s4)
+	fmt.Printf("Hello says Puppy, I got a new Big Barkz %s\n", s4)
+	s5 := puppy.BabyBark()
+	fmt.Printf("Hello says Puppy - i am still baby, ao I am gonna say %s\n", s5)
+	s6 := "woofer!"
+	fmt.Printf("%s\n", strings.ToUpper(s6))
 }
