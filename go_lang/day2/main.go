@@ -66,5 +66,28 @@ func main() {
 			fmt.Printf("\n")
 		}
 	}
+	for i := 0; i < 120; {
+		fmt.Printf("\t%d", i)
+		i++
+	}
 
+	xs := []string{"Aakhri Rasta", "Bees Saal Baad", "Chandni", "Deewar", "Ek Kahani"}
+	fmt.Println(xs)
+	fmt.Printf("Type %T\n", xs)
+	for _, v := range xs {
+		fmt.Printf("%v\t", v)
+	}
+	fmt.Printf("\n")
+	fmt.Println(xs[0])
+	fmt.Println(xs[1])
+	fmt.Println(xs[2])
+	fmt.Println(xs[3])
+	fmt.Println(xs[4])
+	xs = append(xs, "Farishtey", "Golmal", "Hero Number 1", "Insanyat")
+	for i := 0; i < len(xs); i++ {
+		fmt.Printf("Movie[%d] = %s \n", i, xs[i])
+	}
+	for i := 0; i < len(xs[4:7]); i++ {
+		fmt.Printf("New Movie[%d] = %s \n", i, xs[4:7][i])
+	}
 }
