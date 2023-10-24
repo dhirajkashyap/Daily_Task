@@ -85,9 +85,46 @@ func main() {
 	fmt.Println(xs[4])
 	xs = append(xs, "Farishtey", "Golmal", "Hero Number 1", "Insanyat")
 	for i := 0; i < len(xs); i++ {
-		fmt.Printf("Movie[%d] = %s \n", i, xs[i])
+		fmt.Printf("All Movie[%d] = %s \n", i, xs[i])
 	}
+	zs := xs[4:7]
 	for i := 0; i < len(xs[4:7]); i++ {
-		fmt.Printf("New Movie[%d] = %s \n", i, xs[4:7][i])
+		fmt.Printf("New X Movie[%d] = %s \n", i, xs[4:7][i])
+		fmt.Printf("New Z Movie[%d] = %s \n", i, zs[i])
 	}
+
+	fmt.Println("Newer X Movie = %s", xs[4:])
+	fmt.Println("Newest X Movie = %s", xs)
+
+	ys := xs[0:3]
+	for i := 0; i < len(ys); i++ {
+		fmt.Printf("Original Y Movie[%d] = %s \n", i, ys[i])
+	}
+
+	as := append(xs[:4], xs[5:]...)
+	for i := 0; i < len(as); i++ {
+		fmt.Printf("New deleting slice Movie[%d] = %s \n", i, as[i])
+	}
+
+	ii := make([]int, 0, 10)
+	fmt.Println(ii)
+	fmt.Println(len(ii))
+	fmt.Println(cap(ii))
+
+	ii = append(ii, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+	fmt.Println(ii)
+	fmt.Println(len(ii))
+	fmt.Println(cap(ii))
+
+	ii = append(ii, 10, 11, 12, 13, 14)
+	fmt.Println(ii)
+	fmt.Println(len(ii))
+	fmt.Println(cap(ii))
+
+	jb := []string{"James", "Bond", "Martini", "BMW"}
+	mp := []string{"Money", "Penny", "Mojito", "Audi"}
+	bond007 := [][]string{jb, mp}
+	fmt.Println(jb)
+	fmt.Println(mp)
+	fmt.Println(bond007)
 }
