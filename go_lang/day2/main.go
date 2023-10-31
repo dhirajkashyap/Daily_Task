@@ -127,4 +127,15 @@ func main() {
 	fmt.Println(jb)
 	fmt.Println(mp)
 	fmt.Println(bond007)
+
+	a := []int{0, 1, 2, 3, 4, 5, 6}
+	//b := a
+	b := make([]int, 7)
+	copy(b, a)
+	fmt.Println("a = ", a)
+	fmt.Println("b = ", b)
+	b[0] = 8
+	fmt.Println("a = ", a)
+	fmt.Println("b = ", b)
+
 }
