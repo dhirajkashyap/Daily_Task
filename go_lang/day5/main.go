@@ -36,7 +36,7 @@ func Info(s shape) float64 {
 
 func main() {
 
-	fmt.Println("Add func returns", Add(3, 4))
+	fmt.Println("Add func returns", Add(6, 5))
 
 	s1 := Square{
 		length: 3,
