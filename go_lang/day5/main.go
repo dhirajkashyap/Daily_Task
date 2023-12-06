@@ -18,6 +18,14 @@ func Add(a int, b int) int {
 	return a + b
 }
 
+func Subtract(a int, b int) int {
+	if a < b {
+		return b - a
+	} else {
+		return a - b
+	}
+}
+
 func (s Square) Area() float64 {
 	return s.length * s.width
 }
@@ -37,6 +45,7 @@ func Info(s shape) float64 {
 func main() {
 
 	fmt.Println("Add func returns", Add(6, 5))
+	fmt.Println("Subtract func returns", Subtract(6, 5))
 
 	s1 := Square{
 		length: 3,
