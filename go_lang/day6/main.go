@@ -17,6 +17,8 @@ func main() {
 	f := outer()
 	fmt.Println("Outer is bakwas", f())
 
+	fmt.Println(printSquare(square, 4))
+
 }
 
 var x = func() {
@@ -29,4 +31,13 @@ func outer() func() int {
 	return func() int {
 		return 42
 	}
+}
+
+func printSquare(f func(int) int, a int) string {
+	x := f(a)
+	return (fmt.Sprintf("Square of %d is %d", a, x))
+}
+
+func square(n int) int {
+	return n * n
 }
